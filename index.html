@@ -18,178 +18,181 @@
         </div>
     </nav>
     <section class="project container py-1 my-5">
+        <form>
+            <div id="inpThemSo" class="form-row form-group">
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" id="nhapSoN" placeholder="Nhập số n">
+                </div>
+                <div class="col-lg-4">
+                    <button id="btnThemSo" type="button" class="btn btn-success">Thêm số</button>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-info my-3">
+            <span>👉🏿 </span><span id="kqBai1"></span>
+        </div>
         <div class="accordion" id="accordionExample">
             <!-- Bài 1 -->
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai1">
-                    1. Tổng các số dương
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#bai1" aria-expanded="true" aria-controls="collapseOne">
+                    1️⃣ Tổng các số dương
                   </button>
                 </h2>
               </div>
           
-              <div id="bai1" class="collapse">
+              <div id="bai1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  Some placeholder content for the first accordion panel.
+                  Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
                 </div>
               </div>
             </div>
-            
+
             <!-- Bài 2 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai2">
-                        2. Đếm có bao nhiêu số dương trong mảng
-                    </button>
-                  </h2>
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai2" aria-expanded="false" aria-controls="collapseTwo">
+                    2️⃣ Đếm có bao nhiêu số dương trong mảng
+                  </button>
+                </h2>
+              </div>
+              <div id="bai2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Some placeholder content for the second accordion panel. This panel is hidden by default.
                 </div>
-            
-                <div id="bai2" class="collapse">
-                  <div class="card-body">
-                    Some placeholder content for the first accordion panel.
-                  </div>
-                </div>
+              </div>
             </div>
 
             <!-- Bài 3 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai3">
-                        3. Tìm số nhỏ nhất trong mảng.
-                    </button>
-                  </h2>
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai3" aria-expanded="false" aria-controls="collapseThree">
+                    3️⃣ Tìm số nhỏ nhất trong mảng.
+                  </button>
+                </h2>
+              </div>
+              <div id="bai3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                 </div>
-            
-                <div id="bai3" class="collapse">
-                  <div class="card-body">
-                    Some placeholder content for the first accordion panel.
-                  </div>
-                </div>
+              </div>
             </div>
 
             <!-- Bài 4 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai4">
-                        4. Tìm số dương nhỏ nhất trong mảng.
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai4" aria-expanded="false" aria-controls="collapseThree">
+                        4️⃣ Tìm số dương nhỏ nhất trong mảng.
                     </button>
                   </h2>
                 </div>
-            
-                <div id="bai4" class="collapse">
+                <div id="bai4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel.
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                   </div>
                 </div>
             </div>
 
-            <!-- Bài 5  -->
+            <!-- Bài 5 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai5">
-                       5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1.
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai5" aria-expanded="false" aria-controls="collapseThree">
+                        5️⃣ Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1
                     </button>
                   </h2>
                 </div>
-            
-                <div id="bai5" class="collapse">
+                <div id="bai5" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel.
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                   </div>
                 </div>
             </div>
 
-            <!-- Bài 6  -->
+            <!-- Bài 6 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai6">
-                        6. Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai6" aria-expanded="false" aria-controls="collapseThree">
+                        6️⃣ Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).
                     </button>
                   </h2>
                 </div>
-            
-                <div id="bai6" class="collapse">
+                <div id="bai6" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel.
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                   </div>
                 </div>
             </div>
 
             <!-- Bài 7 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai7">
-                        7. Sắp xếp mảng theo thứ tự tăng dần
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai7" aria-expanded="false" aria-controls="collapseThree">
+                        7️⃣ Sắp xếp mảng theo thứ tự tăng dần
                     </button>
                   </h2>
                 </div>
-            
-                <div id="bai7" class="collapse">
+                <div id="bai7" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel.
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                   </div>
                 </div>
             </div>
 
             <!-- Bài 8 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai8">
-                       8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1.
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai8" aria-expanded="false" aria-controls="collapseThree">
+                        8️⃣ Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1
                     </button>
                   </h2>
                 </div>
-            
-                <div id="bai8" class="collapse">
+                <div id="bai8" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel.
-                  </div>
-                </div>
-            </div>
-            
-            <!-- Bài 9  -->
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai9">
-                        9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?
-                    </button>
-                  </h2>
-                </div>
-            
-                <div id="bai9" class="collapse">
-                  <div class="card-body">
-                    Some placeholder content for the first accordion panel.
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                   </div>
                 </div>
             </div>
 
-            <!-- Bài 10  -->
+            <!-- Bài 9 -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#bai10">
-                        10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai9" aria-expanded="false" aria-controls="collapseThree">
+                    9️⃣ Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?
                     </button>
                   </h2>
                 </div>
-            
-                <div id="bai10" class="collapse">
+                <div id="bai9" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel.
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                   </div>
                 </div>
             </div>
-        
-        </div>
+
+            <!-- Bài 10 -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#bai10" aria-expanded="false" aria-controls="collapseThree">
+                        🔟 So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn
+                    </button>
+                  </h2>
+                </div>
+                <div id="bai10" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                  </div>
+                </div>
+            </div>
+          </div>
     </section>
 
     
