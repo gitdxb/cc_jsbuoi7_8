@@ -75,8 +75,14 @@ function timSoDuongNhoNhat() {
     for (let i = 1; i < soDuongNN.length; i++) {
         if (min > soDuongNN[i]) {
             min = soDuongNN[i];
-        }
+        } 
     }
+
+    // Kiểm tra input
+    if (min == undefined ) {
+        min = 0;
+    } 
+    
     document.querySelector('#kqSoDuongNhoNhat_b4').innerHTML = "Số nhỏ nhất: " + min;
 }
 document.querySelector('#btnSoDuongNhoNhat_b4').onclick = timSoDuongNhoNhat;
