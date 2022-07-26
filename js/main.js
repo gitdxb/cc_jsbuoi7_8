@@ -231,14 +231,15 @@ document.querySelector('#btnDemSoNguyen_b9').onclick = demSoNguyen;
 // Bài 10: so sánh số lượng số dương, số lượng số âm
 function ssAmDuong() {
     var soDuong = 0;
+    var soAm = 0;
     for (let i = 0; i < numArray.length; i++) {
         if (numArray[i] > 0) {
             soDuong++;
+        } else {
+            soAm++;
         }
     }
-    // tính số âm
-    var soAm = numArray.length - soDuong;
-
+    
     if (soAm == soDuong) {
         document.querySelector('#kqSS_b10').innerHTML = 'Số âm = Số dương' + '. ( Số âm: ' + soAm + '. Số dương: ' + soDuong + ' )';
     } else if (soAm > soDuong) {
