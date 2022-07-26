@@ -235,7 +235,7 @@ function ssAmDuong() {
     for (let i = 0; i < numArray.length; i++) {
         if (numArray[i] > 0) {
             soDuong++;
-        } else {
+        } else if (numArray[i] < 0){
             soAm++;
         }
     }
